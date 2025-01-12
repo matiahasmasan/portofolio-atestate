@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atestate informatica</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="text-2xl font-bold gradient-text">Portfolio</div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden sm:flex space-x-8">
+            <a
+              href="#about"
+              class="nav-link text-gray-700 hover:text-indigo-600"
+              >About</a
+            >
+            <a
+              href="#gallery"
+              class="nav-link text-gray-700 hover:text-indigo-600"
+              >Gallery</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-700 hover:text-indigo-600"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Burger Menu Button (Right-aligned) -->
+          <button
+            id="burger-menu"
+            class="sm:hidden p-2 hover:bg-gray-100 rounded-lg"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-16 6h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay (slides from right) -->
+      <div
+        id="mobile-menu"
+        class="sm:hidden fixed inset-0 bg-white z-40 transform transition-transform duration-300 translate-x-full"
+      >
+        <div class="p-4">
+          <button
+            id="close-menu"
+            class="mb-4 p-2 hover:bg-gray-100 rounded-lg float-right"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+          <div class="clear-both flex flex-col space-y-4 pt-8">
+            <a
+              href="#about"
+              class="text-xl text-gray-700 hover:text-indigo-600 transition-colors"
+              >About</a
+            >
+            <a
+              href="#gallery"
+              class="text-xl text-gray-700 hover:text-indigo-600 transition-colors"
+              >Gallery</a
+            >
+            <a
+              href="#contact"
+              class="text-xl text-gray-700 hover:text-indigo-600 transition-colors"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="min-h-screen pt-20 flex items-center">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="animate-slide-in">
+          <h1 class="text-6xl md:text-8xl font-bold mb-6 gradient-text">
+            Atestate<br />Informatica
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mb-8">
+            De 3 ani realizez cu pasiune atestate profesionale de informatica,
+            folosindu-ma de tehnologii web, precum HTML, CSS si JavaScript.
+          </p>
+          <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mb-8">
+            Daca ai intrebari, nu ezita sa ma contactezi!
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://www.instagram.com/hasmasanmatia/#" target="_blank">
+              <button
+                class="btn bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700"
+              >
+                Contacteaza-ma
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold mb-12 gradient-text">
+          ATESTATE FINALIZATE ( + documentatie inclusa )
+        </h2>
+        <p class="text-l md:text-xl text-gray-600 max-w-xl mb-8">
+          Pretul unui atestat finalizat este intre 70-120 lei
+        </p>
+        <p class="text-l md:text-xl text-gray-600 max-w-xl mb-8">
+          Pretul unui atestat personalizat este intre 120-150 lei
+        </p>
+        <p class="text-l md:text-xl text-gray-600 max-w-xl mb-8">
+          Documentatia word si pdf este in valoare de 30
+        </p>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 photo-grid"
+        >
+          <!-- Gallery items (15 times) -->
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/teorie.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">TEORIILE CONSPIRATIEI</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/africa.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">AFRICA</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/ecuatie.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">ECUATIA DE GRADUL 2</h3>
+              <p class="text-gray-600">Calculator functional si logic</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/ureche.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">URECHEA UMANA</h3>
+              <p class="text-gray-600">Website de prezentare + quiz</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/avion.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">AVIATIA</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/barbie.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">BARBIE THE MOVIE</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/boxing.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">BOXING</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/weather.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">WEATHER APP</h3>
+              <p class="text-gray-600">Aplicatie cu API</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/snow.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">SNOWBOARD</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/peaky.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">PEAKY BLINDERS</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/mandrie.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">MANDRIE SI PREJUDECATA</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/kard.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">THE KARDASHIANS</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/hangman.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">HANGMAN JAVASCRIPT</h3>
+              <p class="text-gray-600">Automatizare procese</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/gypsy.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">GYPSY</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/food.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">FOOD BLOG</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/elon.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">ELON MUSK</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer"
+          >
+            <img
+              src="backgrounds/covid.png"
+              alt="Project 1"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">IMPACTUL COVIDULUI</h3>
+              <p class="text-gray-600">Website de prezentare</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div
+      id="imageModal"
+      class="hidden fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center"
+    >
+      <div
+        class="modal-content max-w-4xl w-full mx-4 bg-white rounded-lg overflow-hidden"
+      >
+        <div class="p-4 bg-gray-100 flex justify-between items-center">
+          <h3 id="modalTitle" class="text-xl font-semibold"></h3>
+          <button id="modalClose" class="text-gray-500 hover:text-gray-700">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <img
+          id="modalImage"
+          class="w-full max-h-[80vh] object-contain"
+          src=""
+          alt="Modal Image"
+        />
+        <div class="p-4 bg-white">
+          <p id="modalDescription" class="text-gray-600"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer/Contact Section -->
+    <footer id="contact" class="bg-gray-900 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-4xl font-bold mb-6">Contact</h2>
+
+            <div class="space-y-4">
+              <p class="flex items-center hover-lift">
+                <span class="w-8">📧</span>
+                <a href="mailto:email@example.com" class="hover:text-indigo-400"
+                  >matiahasmasan@gmail.com</a
+                >
+              </p>
+              <p class="flex items-center hover-lift">
+                <span class="w-8">📱</span>
+                <span>+40 771 170 938</span>
+              </p>
+              <p class="flex items-center hover-lift">
+                <span class="w-8">📍</span>
+                <span>Baia Mare</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
